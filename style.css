@@ -1,0 +1,155 @@
+/* Global view */
+
+/* Center card horizontally and vertically */
+html,
+body {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+/* end */
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  background-color: hsl(217, 54%, 11%);
+}
+
+/* resize card on both axes with the desired width */
+.wrapper {
+  margin: auto;
+  width: 33%;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 1.25rem 0.625rem 0.625rem rgba(0, 0, 0, 0.242);
+}
+
+/* declare that images can never be rendered at a size wider than their containing element */
+.equilibriumImage {
+  max-inline-size: 100%;
+  block-size: auto;
+  border-radius: 0.3rem;
+}
+
+/* center and overlap the Equilibrium image and "eye" icon regardless of viewport size */
+header {
+  display: grid;
+  place-items: center;
+  background-color: hsla(178, 100%, 50%, 0.588); 
+  border-radius: 0.3rem;
+}
+
+.equilibriumImage,
+.hoverIcon {
+  grid-column: 1;
+  grid-row: 1;
+}
+/* end */
+
+/* resize and hide "eye" icon in normal view */
+.hoverIcon {
+  transition: 0.5s ease;
+  opacity: 0;
+  max-inline-size: 15%;
+  block-size: auto;
+}
+
+/* show "eye" icon on "header" box hover */
+header:hover,
+header:hover .hoverIcon {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.equilibriumImage:hover {
+  mix-blend-mode:soft-light; 
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+}
+
+h1:hover,
+.authorName:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+p,
+.author {
+  color: hsl(215, 51%, 70%);
+}
+
+/* distribute the paired items (icon + text) evenly along the main axis */
+nav {
+  font-size: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: hsl(178, 100%, 50%);
+  margin: 0.5rem;
+}
+
+.etherumIcon img {
+  max-inline-size: 10%;
+  margin-inline-end: 0.3rem;
+}
+
+.clockIcon img {
+  max-inline-size: 20%;
+  margin-inline-end: 0.3rem;
+}
+
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+  margin: 1rem 0;
+}
+/* align icon and text on the main axis and group them at the beggining of the axis */
+footer {
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+footer img {
+  max-inline-size: 1rem;
+  margin-inline-end: 0.3rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.authorName {
+  color: hsl(0, 0%, 100%);
+  margin-inline-start: 0.2rem;
+}
+
+/* Mobile view */
+@media screen and (max-width: 600px) and (min-width: 500px) {
+  .wrapper {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 400px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 350px) {
+  .wrapper {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 350px) and (min-width: 300px) {
+  .wrapper {
+    width: 70%;
+  }
+}
