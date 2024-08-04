@@ -8,7 +8,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -17,6 +16,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
+A simple layout design with a little challenge (for me) when changing the image hue on hover. 
 
 ### The challenge
 
@@ -27,14 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./NFT_preview_card_component.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/monicaivanov/NFT-preview-card-component.git]
+- Live Site URL: [https://monicaivanov.github.io/NFT-preview-card-component/]
 
-## My process
 
 ### Built with
 
@@ -42,36 +41,13 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 
 ### What I learned
+I practiced more the grid and flexbox. I learned how to overlap 2 elements and center them in CSS. I learned to use blend mode property. 
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
-I am still struggling in designing responsive designs especially when starting with mobile first. There are many resources online but they don't always fit the actual needs and I struglle to understand how my choice of properties/values is influencing each other.
+I am still struggling in designing responsive designs especially when starting with mobile first. There are many resources online but they don't always fit the actual needs and I struglle to understand how my choice of properties/values is influencing each other. 
 
 ### Useful resources
 

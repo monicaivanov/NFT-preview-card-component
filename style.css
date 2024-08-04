@@ -36,6 +36,7 @@ body {
 }
 
 /* center and overlap the Equilibrium image and "eye" icon regardless of viewport size */
+/* predefine a background color for the image container so I can use it to blend with Equilibrium image when I will use the blender-mode property */
 header {
   display: grid;
   place-items: center;
@@ -64,7 +65,7 @@ header:hover .hoverIcon {
   opacity: 1;
   cursor: pointer;
 }
-
+/* change the Equilibrium image color: blending with the above background color defined in header */
 .equilibriumImage:hover {
   mix-blend-mode:soft-light; 
 }
